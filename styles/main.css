@@ -1,0 +1,56 @@
+:root {
+    --clr-background: hsl(212, 45%, 89%);
+    --clr-primary: hsl(0, 0%, 100%);
+    --clr-secondary: hsl(218, 44%, 22%);
+    --clr-tertiary: hsl(220, 15%, 55%);
+    --clr-font: hsl(0, 0%, 0%);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 0.9375rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    color: var(--clr-font);
+    background-color: var(--clr-background);
+    margin: 0;
+}
+
+.container {
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.qr-card {
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: var(--clr-primary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 300px;
+}
+
+.qr-card img {
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.qr-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0.875rem 0 0.875rem;
+}
+
+.qr-card p {
+    color: var(--clr-tertiary);
+    margin: 1rem 0.875rem 0 0.875rem;
+}
